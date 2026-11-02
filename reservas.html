@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mis reservas · PetCare</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<script src="icons.js"></script>
+<a class="skip" href="#main">Saltar al contenido</a>
+<header class="topbar"><div class="container">
+  <a class="brand" href="panel.html" aria-label="PetCare, ir al inicio"><span class="brand-mark"><svg class="ic " aria-hidden="true"><use href="#i-paw-print"/></svg></span>PetCare</a>
+  <nav class="nav" aria-label="Navegación principal"><a href="panel.html"><svg class="ic " aria-hidden="true"><use href="#i-house"/></svg>Inicio</a><a href="buscar.html"><svg class="ic " aria-hidden="true"><use href="#i-search"/></svg>Buscar</a><a href="reservas.html" aria-current=page><svg class="ic " aria-hidden="true"><use href="#i-calendar-check"/></svg>Mis reservas</a><a href="perfil.html"><svg class="ic " aria-hidden="true"><use href="#i-user"/></svg>Mi perfil</a></nav>
+  <div class="topbar-actions">
+    <button class="icon-btn hide-m" aria-label="Notificaciones (1 nueva)"><svg class="ic " aria-hidden="true"><use href="#i-bell"/></svg><span class="dot"></span></button>
+    <a class="avatar" href="perfil.html" aria-label="Mi cuenta">VT</a>
+    <a class="icon-btn hide-m" href="login.html" aria-label="Cerrar sesión"><svg class="ic " aria-hidden="true"><use href="#i-log-out"/></svg></a>
+  </div>
+</div></header>
+<main id="main" class="page"><div class="container">
+
+<div class="row-between wrap"><h1>Mis reservas</h1><a class="btn btn-primary" href="buscar.html"><svg class="ic " aria-hidden="true"><use href="#i-plus"/></svg> Nueva reserva</a></div>
+<div class="tabs" role="tablist"><a href="reservas.html" aria-current="page">Próximas (2)</a><a href="#">Pasadas (5)</a><a href="#">Canceladas (1)</a></div>
+<div class="alert alert-success" style="margin-bottom:16px"><svg class="ic " aria-hidden="true"><use href="#i-circle-check"/></svg><div>Tu reserva <b>PC-2611-0458</b> fue confirmada.</div></div>
+<div class="stack">
+<article class="card"><div class="booking-mini" style="flex-wrap:wrap"><div class="date-box"><span>Vie</span><b>13</b><span>Nov</span></div>
+<div style="flex:1;min-width:200px"><h3 style="margin:0">Baño y corte · Max</h3><div class="meta" style="margin:4px 0 0"><span><svg class="ic ic-sm" aria-hidden="true"><use href="#i-map-pin"/></svg>Huellitas Spa, Chapinero</span><span><svg class="ic ic-sm" aria-hidden="true"><use href="#i-clock"/></svg>10:30 a. m.</span></div></div>
+<span class="badge badge-green">Confirmada</span><div class="row wrap" style="gap:8px"><a class="btn btn-secondary btn-sm" href="proveedor.html">Ver detalle</a><a class="btn btn-secondary btn-sm" href="reservar.html">Reprogramar</a><button class="btn btn-danger btn-sm">Cancelar</button></div></div></article>
+<article class="card"><div class="booking-mini" style="flex-wrap:wrap"><div class="date-box"><span>Vie</span><b>20</b><span>Nov</span></div>
+<div style="flex:1;min-width:200px"><h3 style="margin:0">Consulta general · Max</h3><div class="meta" style="margin:4px 0 0"><span><svg class="ic ic-sm" aria-hidden="true"><use href="#i-map-pin"/></svg>Clínica Veterinaria San Roque</span><span><svg class="ic ic-sm" aria-hidden="true"><use href="#i-clock"/></svg>4:30 p. m.</span></div></div>
+<span class="badge badge-amber">Pendiente de confirmar</span><div class="row wrap" style="gap:8px"><a class="btn btn-secondary btn-sm" href="#">Ver detalle</a><button class="btn btn-danger btn-sm">Cancelar</button></div></div></article>
+</div>
+<div class="section-title"><h2>Por calificar</h2></div>
+<article class="card"><div class="booking-mini" style="flex-wrap:wrap"><div class="date-box"><span>Mié</span><b>28</b><span>Oct</span></div>
+<div style="flex:1;min-width:200px"><h3 style="margin:0">Vacunación · Max</h3><div class="meta" style="margin:4px 0 0"><span><svg class="ic ic-sm" aria-hidden="true"><use href="#i-map-pin"/></svg>Clínica Veterinaria San Roque</span><span><svg class="ic ic-sm" aria-hidden="true"><use href="#i-clock"/></svg>9:00 a. m.</span></div></div>
+<span class="badge badge-gray">Completada</span><div class="row wrap" style="gap:8px"><a class="btn btn-primary btn-sm" href="calificar.html"><svg class="ic ic-sm" aria-hidden="true"><use href="#i-star"/></svg> Calificar servicio</a></div></div></article>
+
+</div></main>
+<nav class="bottom-nav" aria-label="Navegación inferior"><a href="panel.html"><svg class="ic " aria-hidden="true"><use href="#i-house"/></svg>Inicio</a><a href="buscar.html"><svg class="ic " aria-hidden="true"><use href="#i-search"/></svg>Buscar</a><a href="reservas.html" aria-current=page><svg class="ic " aria-hidden="true"><use href="#i-calendar-check"/></svg>Reservas</a><a href="perfil.html"><svg class="ic " aria-hidden="true"><use href="#i-user"/></svg>Perfil</a></nav>
+<script src="app.js"></script>
+</body>
+</html>

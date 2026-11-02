@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Crear cuenta · PetCare</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<script src="icons.js"></script>
+
+<div class="auth"><aside class="auth-aside">
+  <a class="brand" href="index.html"><span class="brand-mark"><svg class="ic " aria-hidden="true"><use href="#i-paw-print"/></svg></span>PetCare</a>
+  <div>
+    <h2>Todo lo que tu mascota necesita, en un solo lugar.</h2>
+    <p>Compara proveedores, revisa opiniones y reserva sin llamar a cinco lugares distintos.</p>
+    <ul class="auth-list">
+      <li><svg class="ic " aria-hidden="true"><use href="#i-shield-check"/></svg> Proveedores con información verificada</li>
+      <li><svg class="ic " aria-hidden="true"><use href="#i-star"/></svg> Calificaciones de otros dueños</li>
+      <li><svg class="ic " aria-hidden="true"><use href="#i-calendar-check"/></svg> Horarios disponibles en tiempo real</li>
+    </ul>
+  </div>
+  <span class="caption" style="color:#CFEBDB">© 2026 PetCare</span>
+  <svg class="ic bigpaw" aria-hidden="true"><use href="#i-paw-print"/></svg>
+</aside>
+<main id="main" class="auth-main"><div class="auth-box">
+  <a href="login.html" class="small row" style="gap:6px;margin-bottom:16px"><svg class="ic ic-sm" aria-hidden="true"><use href="#i-arrow-left"/></svg> Volver</a>
+  <h1>Crea tu cuenta</h1>
+  <p class="muted">Solo te tomará un minuto. Los campos con <span class="req">*</span> son obligatorios.</p>
+  <form class="stack" action="panel.html" style="margin-top:20px" novalidate>
+    <div class="grid grid-2" style="gap:12px">
+      <div class="field"><label class="label" for="n">Nombre <span class="req">*</span></label><input id="n" class="input" value="Valentina"></div>
+      <div class="field"><label class="label" for="a">Apellido <span class="req">*</span></label><input id="a" class="input" value="Torres"></div>
+    </div>
+    <div class="field has-error"><label class="label" for="e">Correo electrónico <span class="req">*</span></label>
+      <input id="e" type="email" class="input" value="valentina.torres@correo" aria-invalid="true" aria-describedby="e-err">
+      <span class="error-msg" id="e-err"><svg class="ic ic-sm" aria-hidden="true"><use href="#i-circle-alert"/></svg> Escribe un correo válido, por ejemplo nombre@correo.com</span></div>
+    <div class="field"><label class="label" for="t">Celular</label><input id="t" class="input" value="300 123 4567" inputmode="tel"></div>
+    <div class="field"><label class="label" for="p">Contraseña <span class="req">*</span></label><input id="p" type="password" class="input" value="contraseña1">
+      <span class="hint">Mínimo 8 caracteres, con al menos un número.</span></div>
+    <div class="field"><label class="label" for="pet">Nombre de tu mascota</label>
+      <div class="grid grid-2" style="gap:12px"><input id="pet" class="input" value="Max"><select class="select" aria-label="Tipo de mascota"><option>Perro</option><option>Gato</option><option>Otro</option></select></div>
+      <span class="hint">Opcional. Puedes agregar más mascotas después.</span></div>
+    <label class="check"><input type="checkbox" checked> <span class="small">Acepto los <a href="#">términos y condiciones</a> y la <a href="#">política de tratamiento de datos</a>.</span></label>
+    <button class="btn btn-primary btn-block btn-lg">Crear cuenta</button>
+  </form>
+  <p class="muted" style="text-align:center;margin-top:20px">¿Ya tienes cuenta? <a href="login.html">Inicia sesión</a></p>
+</div></main></div>
+<script src="app.js"></script>
+</body>
+</html>

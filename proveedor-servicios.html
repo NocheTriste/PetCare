@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mis servicios · PetCare</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<script src="icons.js"></script>
+<a class="skip" href="#main">Saltar al contenido</a>
+<header class="topbar"><div class="container">
+  <a class="brand" href="proveedor-servicios.html" aria-label="PetCare, ir al inicio"><span class="brand-mark"><svg class="ic " aria-hidden="true"><use href="#i-paw-print"/></svg></span>PetCare</a>
+  <nav class="nav" aria-label="Navegación principal"><a href="proveedor-servicios.html" aria-current=page><svg class="ic " aria-hidden="true"><use href="#i-briefcase"/></svg>Mis servicios</a><a href="proveedor-reportes.html"><svg class="ic " aria-hidden="true"><use href="#i-chart-column"/></svg>Agenda y reportes</a></nav>
+  <div class="topbar-actions">
+    <button class="icon-btn hide-m" aria-label="Notificaciones (1 nueva)"><svg class="ic " aria-hidden="true"><use href="#i-bell"/></svg><span class="dot"></span></button>
+    <a class="avatar" href="#" aria-label="Mi cuenta">LG</a>
+    <a class="icon-btn hide-m" href="login.html" aria-label="Cerrar sesión"><svg class="ic " aria-hidden="true"><use href="#i-log-out"/></svg></a>
+  </div>
+</div></header>
+<main id="main" class="page"><div class="container">
+
+<div class="row-between wrap"><div><span class="caption">Panel del proveedor</span><h1 style="margin:0">Huellitas Spa</h1></div><a class="btn btn-secondary" href="proveedor.html"><svg class="ic " aria-hidden="true"><use href="#i-eye"/></svg> Ver mi perfil público</a></div>
+<div class="tabs" style="margin-top:20px"><a href="proveedor-servicios.html" aria-current="page">Servicios</a><a href="#">Información del negocio</a><a href="#">Horarios de atención</a></div>
+<div class="layout-main-aside">
+  <section class="card"><div class="row-between card-pad" style="padding-bottom:12px"><h2 style="font-size:1.125rem;margin:0">Servicios publicados (4)</h2><div class="input-icon" style="width:220px"><svg class="ic " aria-hidden="true"><use href="#i-search"/></svg><input class="input" placeholder="Buscar servicio" aria-label="Buscar servicio" style="min-height:40px"></div></div>
+    <div class="table-wrap"><table class="table"><thead><tr><th>Servicio</th><th>Categoría</th><th>Duración</th><th>Precio</th><th>Estado</th><th><span class="sr-only">Acciones</span></th></tr></thead><tbody><tr><td><b style="color:var(--ink)">Baño y secado</b></td><td>Peluquería</td><td>45 min</td><td>$35.000</td><td><span class="badge badge-green">Activo</span></td><td><div class="row" style="gap:6px"><button class="icon-btn" aria-label="Editar Baño y secado"><svg class="ic ic-sm" aria-hidden="true"><use href="#i-pencil"/></svg></button><button class="icon-btn" aria-label="Eliminar Baño y secado" style="color:var(--danger)"><svg class="ic ic-sm" aria-hidden="true"><use href="#i-trash-2"/></svg></button></div></td></tr><tr><td><b style="color:var(--ink)">Baño y corte</b></td><td>Peluquería</td><td>1 h 30 min</td><td>$45.000</td><td><span class="badge badge-green">Activo</span></td><td><div class="row" style="gap:6px"><button class="icon-btn" aria-label="Editar Baño y corte"><svg class="ic ic-sm" aria-hidden="true"><use href="#i-pencil"/></svg></button><button class="icon-btn" aria-label="Eliminar Baño y corte" style="color:var(--danger)"><svg class="ic ic-sm" aria-hidden="true"><use href="#i-trash-2"/></svg></button></div></td></tr><tr><td><b style="color:var(--ink)">Corte de uñas y limpieza de oídos</b></td><td>Peluquería</td><td>20 min</td><td>$15.000</td><td><span class="badge badge-green">Activo</span></td><td><div class="row" style="gap:6px"><button class="icon-btn" aria-label="Editar Corte de uñas y limpieza de oídos"><svg class="ic ic-sm" aria-hidden="true"><use href="#i-pencil"/></svg></button><button class="icon-btn" aria-label="Eliminar Corte de uñas y limpieza de oídos" style="color:var(--danger)"><svg class="ic ic-sm" aria-hidden="true"><use href="#i-trash-2"/></svg></button></div></td></tr><tr><td><b style="color:var(--ink)">Spa completo</b></td><td>Peluquería</td><td>2 h</td><td>$70.000</td><td><span class="badge badge-gray">Pausado</span></td><td><div class="row" style="gap:6px"><button class="icon-btn" aria-label="Editar Spa completo"><svg class="ic ic-sm" aria-hidden="true"><use href="#i-pencil"/></svg></button><button class="icon-btn" aria-label="Eliminar Spa completo" style="color:var(--danger)"><svg class="ic ic-sm" aria-hidden="true"><use href="#i-trash-2"/></svg></button></div></td></tr></tbody></table></div></section>
+  <section class="card card-pad sticky"><h2 style="font-size:1.125rem"><svg class="ic " aria-hidden="true"><use href="#i-plus"/></svg> Nuevo servicio</h2>
+    <form class="stack">
+      <div class="field"><label class="label" for="sn">Nombre del servicio <span class="req">*</span></label><input id="sn" class="input" value="Deslanado"></div>
+      <div class="field"><label class="label" for="sc">Categoría <span class="req">*</span></label><select id="sc" class="select"><option>Peluquería</option><option>Veterinaria</option><option>Paseo</option><option>Guardería</option></select></div>
+      <div class="grid grid-2" style="gap:12px"><div class="field"><label class="label" for="sd">Duración</label><select id="sd" class="select"><option>1 h</option><option>30 min</option><option>2 h</option></select></div><div class="field"><label class="label" for="sp">Precio <span class="req">*</span></label><input id="sp" class="input" value="$40.000"></div></div>
+      <div class="field"><label class="label" for="sdesc">Descripción</label><textarea id="sdesc" class="textarea" style="min-height:90px">Retiro de pelo muerto con cepillo especial. Ideal para razas de doble capa.</textarea></div>
+      <label class="check"><input type="checkbox" checked> Publicar de inmediato</label>
+      <button type="button" class="btn btn-primary btn-block">Guardar servicio</button>
+    </form></section>
+</div>
+
+</div></main>
+<nav class="bottom-nav" aria-label="Navegación inferior"><a href="proveedor-servicios.html" aria-current=page><svg class="ic " aria-hidden="true"><use href="#i-briefcase"/></svg>Servicios</a><a href="proveedor-reportes.html"><svg class="ic " aria-hidden="true"><use href="#i-chart-column"/></svg>Reportes</a><a href="login.html"><svg class="ic " aria-hidden="true"><use href="#i-log-out"/></svg>Salir</a><a href="#"><svg class="ic " aria-hidden="true"><use href="#i-bell"/></svg>Avisos</a></nav>
+<script src="app.js"></script>
+</body>
+</html>

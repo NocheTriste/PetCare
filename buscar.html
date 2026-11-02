@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Resultados de búsqueda · PetCare</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<script src="icons.js"></script>
+<a class="skip" href="#main">Saltar al contenido</a>
+<header class="topbar"><div class="container">
+  <a class="brand" href="panel.html" aria-label="PetCare, ir al inicio"><span class="brand-mark"><svg class="ic " aria-hidden="true"><use href="#i-paw-print"/></svg></span>PetCare</a>
+  <nav class="nav" aria-label="Navegación principal"><a href="panel.html"><svg class="ic " aria-hidden="true"><use href="#i-house"/></svg>Inicio</a><a href="buscar.html" aria-current=page><svg class="ic " aria-hidden="true"><use href="#i-search"/></svg>Buscar</a><a href="reservas.html"><svg class="ic " aria-hidden="true"><use href="#i-calendar-check"/></svg>Mis reservas</a><a href="perfil.html"><svg class="ic " aria-hidden="true"><use href="#i-user"/></svg>Mi perfil</a></nav>
+  <div class="topbar-actions">
+    <button class="icon-btn hide-m" aria-label="Notificaciones (1 nueva)"><svg class="ic " aria-hidden="true"><use href="#i-bell"/></svg><span class="dot"></span></button>
+    <a class="avatar" href="perfil.html" aria-label="Mi cuenta">VT</a>
+    <a class="icon-btn hide-m" href="login.html" aria-label="Cerrar sesión"><svg class="ic " aria-hidden="true"><use href="#i-log-out"/></svg></a>
+  </div>
+</div></header>
+<main id="main" class="page"><div class="container">
+
+<nav class="caption" aria-label="Ruta"><a href="panel.html">Inicio</a> / Buscar</nav>
+<div class="row-between wrap" style="margin:8px 0 20px">
+  <div><h1 style="margin:0">Peluquería en Chapinero</h1><p class="muted" style="margin:0">2 resultados con los filtros aplicados</p></div>
+  <div class="row"><label for="ord" class="small muted">Ordenar por</label><select id="ord" class="select" style="width:auto;min-height:40px"><option>Mejor calificados</option><option>Más cercanos</option><option>Menor precio</option></select></div>
+</div>
+<button class="btn btn-secondary btn-block filter-toggle" aria-controls="filtros" aria-expanded="false" data-filter-toggle><svg class="ic " aria-hidden="true"><use href="#i-sliders-horizontal"/></svg> Filtros (4 activos)</button>
+<div class="layout-side">
+  <aside class="card card-pad sticky filters-panel" id="filtros" aria-labelledby="ft">
+    <div class="row-between"><h3 id="ft" class="row" style="margin:0"><svg class="ic " aria-hidden="true"><use href="#i-sliders-horizontal"/></svg> Filtros</h3><a href="#" class="small" data-clear>Limpiar todo</a></div>
+    <hr class="divider">
+    <fieldset class="stack" style="border:0;padding:0;margin:0"><legend class="label" style="margin-bottom:8px">Tipo de servicio</legend>
+      <label class="check"><input type="checkbox"> <svg class="ic ic-sm" aria-hidden="true"><use href="#i-stethoscope"/></svg> Veterinaria</label>
+      <label class="check"><input type="checkbox" checked> <svg class="ic ic-sm" aria-hidden="true"><use href="#i-scissors"/></svg> Peluquería</label>
+      <label class="check"><input type="checkbox"> <svg class="ic ic-sm" aria-hidden="true"><use href="#i-footprints"/></svg> Paseo</label>
+      <label class="check"><input type="checkbox"> <svg class="ic ic-sm" aria-hidden="true"><use href="#i-house-heart"/></svg> Guardería</label>
+    </fieldset>
+    <hr class="divider">
+    <div class="field"><label class="label" for="loc2">Ubicación</label><div class="input-icon"><svg class="ic " aria-hidden="true"><use href="#i-map-pin"/></svg><input id="loc2" class="input" value="Chapinero"></div></div>
+    <div class="field" style="margin-top:12px"><label class="label" for="dist">Distancia máxima: <b>3 km</b></label><input id="dist" type="range" class="range" min="1" max="15" value="3"></div>
+    <hr class="divider">
+    <div class="field"><label class="label" for="pr">Precio máximo: <b>$60.000</b></label><input id="pr" type="range" class="range" min="10000" max="200000" value="60000"></div>
+    <hr class="divider">
+    <fieldset style="border:0;padding:0;margin:0"><legend class="label" style="margin-bottom:8px">Calificación mínima</legend>
+      <div class="row wrap" style="gap:8px"><button class="pill" data-toggle-group="r">3+</button><button class="pill" data-toggle-group="r">4+</button><button class="pill on" data-toggle-group="r">4.5+</button></div></fieldset>
+    <hr class="divider">
+    <fieldset style="border:0;padding:0;margin:0"><legend class="label" style="margin-bottom:8px">Disponibilidad</legend>
+      <div class="row wrap" style="gap:8px"><button class="pill on" data-toggle-group="d">Hoy</button><button class="pill" data-toggle-group="d">Mañana</button><button class="pill" data-toggle-group="d">Esta semana</button></div></fieldset>
+    <button class="btn btn-primary btn-block" style="margin-top:20px">Aplicar filtros</button>
+  </aside>
+  <section aria-label="Resultados">
+    <div class="row wrap" style="gap:8px;margin-bottom:16px" aria-label="Filtros activos">
+      <span class="small muted">Filtros activos:</span>
+      <button class="chip" data-chip>Peluquería <svg class="ic " aria-hidden="true"><use href="#i-x"/></svg><span class="sr-only">Quitar filtro</span></button>
+      <button class="chip" data-chip>Hasta 3 km <svg class="ic " aria-hidden="true"><use href="#i-x"/></svg></button>
+      <button class="chip" data-chip>4.5+ estrellas <svg class="ic " aria-hidden="true"><use href="#i-x"/></svg></button>
+      <button class="chip" data-chip>Disponible hoy <svg class="ic " aria-hidden="true"><use href="#i-x"/></svg></button>
+    </div>
+    <div class="stack"><article class="card card-hover provider">
+  <div class="thumb th-1"><svg class="ic " aria-hidden="true"><use href="#i-scissors"/></svg></div>
+  <div>
+    <div class="row wrap" style="gap:8px;margin-bottom:4px"><span class="badge badge-gray">Peluquería</span><span class="badge badge-blue"><svg class="ic ic-sm" aria-hidden="true"><use href="#i-shield-check"/></svg> Verificado</span></div>
+    <h3><a href="proveedor.html" style="color:var(--ink)">Huellitas Spa</a></h3>
+    <div class="meta"><span class="rating"><span class="stars" aria-hidden="true"><svg class="ic" aria-hidden="true"><use href="#i-star"/></svg><svg class="ic" aria-hidden="true"><use href="#i-star"/></svg><svg class="ic" aria-hidden="true"><use href="#i-star"/></svg><svg class="ic" aria-hidden="true"><use href="#i-star"/></svg><svg class="ic" aria-hidden="true"><use href="#i-star"/></svg></span><span class="sr-only">Calificación</span> 4.8 <span class="muted" style="font-weight:400">(126 opiniones)</span></span><span><svg class="ic ic-sm" aria-hidden="true"><use href="#i-map-pin"/></svg>Chapinero · 1,2 km</span></div>
+    <span class="badge badge-green"><svg class="ic ic-sm" aria-hidden="true"><use href="#i-clock"/></svg> Hoy desde 2:00 p. m.</span>
+  </div>
+  <div class="p-cta" style="display:flex;flex-direction:column;align-items:flex-end;gap:10px">
+    <span class="price">$45.000 <small>baño y corte</small></span>
+    <a class="btn btn-primary btn-sm" href="proveedor.html">Ver proveedor <svg class="ic ic-sm" aria-hidden="true"><use href="#i-chevron-right"/></svg></a>
+  </div>
+</article><article class="card card-hover provider">
+  <div class="thumb th-2"><svg class="ic " aria-hidden="true"><use href="#i-scissors"/></svg></div>
+  <div>
+    <div class="row wrap" style="gap:8px;margin-bottom:4px"><span class="badge badge-gray">Peluquería</span></div>
+    <h3><a href="proveedor.html" style="color:var(--ink)">Pet Grooming Express</a></h3>
+    <div class="meta"><span class="rating"><span class="stars" aria-hidden="true"><svg class="ic" aria-hidden="true"><use href="#i-star"/></svg><svg class="ic" aria-hidden="true"><use href="#i-star"/></svg><svg class="ic" aria-hidden="true"><use href="#i-star"/></svg><svg class="ic" aria-hidden="true"><use href="#i-star"/></svg><svg class="ic off" aria-hidden="true"><use href="#i-star"/></svg></span><span class="sr-only">Calificación</span> 4.4 <span class="muted" style="font-weight:400">(41 opiniones)</span></span><span><svg class="ic ic-sm" aria-hidden="true"><use href="#i-map-pin"/></svg>Chapinero Alto · 2,0 km</span></div>
+    <span class="badge badge-amber"><svg class="ic ic-sm" aria-hidden="true"><use href="#i-clock"/></svg> Mañana desde 9:00 a. m.</span>
+  </div>
+  <div class="p-cta" style="display:flex;flex-direction:column;align-items:flex-end;gap:10px">
+    <span class="price">$38.000 <small>baño</small></span>
+    <a class="btn btn-primary btn-sm" href="proveedor.html">Ver proveedor <svg class="ic ic-sm" aria-hidden="true"><use href="#i-chevron-right"/></svg></a>
+  </div>
+</article></div>
+    <div class="alert alert-info" style="margin-top:20px"><svg class="ic " aria-hidden="true"><use href="#i-info"/></svg><div>¿Pocos resultados? Prueba <a href="#">ampliar la distancia</a> o <a href="#" data-clear>quitar algunos filtros</a>.</div></div>
+  </section>
+</div>
+
+</div></main>
+<nav class="bottom-nav" aria-label="Navegación inferior"><a href="panel.html"><svg class="ic " aria-hidden="true"><use href="#i-house"/></svg>Inicio</a><a href="buscar.html" aria-current=page><svg class="ic " aria-hidden="true"><use href="#i-search"/></svg>Buscar</a><a href="reservas.html"><svg class="ic " aria-hidden="true"><use href="#i-calendar-check"/></svg>Reservas</a><a href="perfil.html"><svg class="ic " aria-hidden="true"><use href="#i-user"/></svg>Perfil</a></nav>
+<script src="app.js"></script>
+</body>
+</html>

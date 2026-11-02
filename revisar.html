@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Revisar y confirmar · PetCare</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<script src="icons.js"></script>
+<a class="skip" href="#main">Saltar al contenido</a>
+<header class="topbar"><div class="container">
+  <a class="brand" href="panel.html" aria-label="PetCare, ir al inicio"><span class="brand-mark"><svg class="ic " aria-hidden="true"><use href="#i-paw-print"/></svg></span>PetCare</a>
+  <nav class="nav" aria-label="Navegación principal"><a href="panel.html"><svg class="ic " aria-hidden="true"><use href="#i-house"/></svg>Inicio</a><a href="buscar.html" aria-current=page><svg class="ic " aria-hidden="true"><use href="#i-search"/></svg>Buscar</a><a href="reservas.html"><svg class="ic " aria-hidden="true"><use href="#i-calendar-check"/></svg>Mis reservas</a><a href="perfil.html"><svg class="ic " aria-hidden="true"><use href="#i-user"/></svg>Mi perfil</a></nav>
+  <div class="topbar-actions">
+    <button class="icon-btn hide-m" aria-label="Notificaciones (1 nueva)"><svg class="ic " aria-hidden="true"><use href="#i-bell"/></svg><span class="dot"></span></button>
+    <a class="avatar" href="perfil.html" aria-label="Mi cuenta">VT</a>
+    <a class="icon-btn hide-m" href="login.html" aria-label="Cerrar sesión"><svg class="ic " aria-hidden="true"><use href="#i-log-out"/></svg></a>
+  </div>
+</div></header>
+<main id="main" class="page"><div class="container">
+
+<a href="reservar.html" class="small row" style="gap:6px"><svg class="ic ic-sm" aria-hidden="true"><use href="#i-arrow-left"/></svg> Cambiar fecha u hora</a>
+<h1 style="margin:12px 0 20px">Revisa tu reserva</h1>
+<ol class="stepper" aria-label="Pasos de la reserva"><li class="done"><span class="step-num"><svg class="ic ic-sm" aria-hidden="true"><use href="#i-check"/></svg></span><span class="step-label">Fecha y hora</span></li><li class="current" aria-current=step><span class="step-num">2</span><span class="step-label">Revisar y confirmar</span></li><li class=""><span class="step-num">3</span><span class="step-label">Reserva confirmada</span></li></ol>
+<div class="layout-main-aside">
+  <div class="stack">
+    <div class="alert alert-info"><svg class="ic " aria-hidden="true"><use href="#i-info"/></svg><div><b>Tu reserva aún no está confirmada.</b> Revisa los datos y pulsa “Confirmar reserva” para finalizar.</div></div>
+    <section class="card card-pad">
+      <div class="row-between"><h2 style="font-size:1.125rem;margin:0">Detalles de la cita</h2><a href="reservar.html" class="small row" style="gap:4px"><svg class="ic ic-sm" aria-hidden="true"><use href="#i-pencil"/></svg> Editar</a></div>
+      <hr class="divider">
+      <div class="grid grid-2" style="gap:16px">
+        <div class="row" style="align-items:flex-start"><svg class="ic " aria-hidden="true"><use href="#i-scissors"/></svg><div><span class="caption">Servicio</span><div><b>Baño y corte</b> · 1 h 30 min</div></div></div>
+        <div class="row" style="align-items:flex-start"><svg class="ic " aria-hidden="true"><use href="#i-dog"/></svg><div><span class="caption">Mascota</span><div><b>Max</b> · Perro</div></div></div>
+        <div class="row" style="align-items:flex-start"><svg class="ic " aria-hidden="true"><use href="#i-calendar"/></svg><div><span class="caption">Fecha y hora</span><div><b>Viernes 13 de noviembre de 2026</b><br>10:30 a. m. – 12:00 m.</div></div></div>
+        <div class="row" style="align-items:flex-start"><svg class="ic " aria-hidden="true"><use href="#i-map-pin"/></svg><div><span class="caption">Lugar</span><div><b>Huellitas Spa</b><br>Cra. 13 #57-24, Chapinero</div></div></div>
+      </div>
+      <hr class="divider">
+      <div class="row" style="align-items:flex-start"><svg class="ic " aria-hidden="true"><use href="#i-message-square"/></svg><div><span class="caption">Nota para el proveedor</span><div>Max es un poco nervioso con el secador.</div></div></div>
+    </section>
+    <section class="card card-pad"><h2 style="font-size:1.125rem">Datos de contacto</h2>
+      <p style="margin:0">Valentina Torres · 300 123 4567 · valentina.torres@correo.com</p></section>
+    <section class="card card-pad"><h2 style="font-size:1.125rem">Política de cancelación</h2>
+      <p class="muted" style="margin:0">Puedes cancelar gratis desde “Mis reservas” hasta el jueves 12 de noviembre a las 10:30 a. m. (24 h antes).</p></section>
+  </div>
+  <aside class="card card-pad sticky summary">
+  <div class="row" style="gap:12px;margin-bottom:12px"><div class="thumb th-1" style="width:56px;height:56px"><svg class="ic ic-sm" aria-hidden="true"><use href="#i-scissors"/></svg></div><div><h3 style="margin:0">Huellitas Spa</h3><span class="rating"><span class="stars" aria-hidden="true"><svg class="ic" aria-hidden="true"><use href="#i-star"/></svg><svg class="ic" aria-hidden="true"><use href="#i-star"/></svg><svg class="ic" aria-hidden="true"><use href="#i-star"/></svg><svg class="ic" aria-hidden="true"><use href="#i-star"/></svg><svg class="ic" aria-hidden="true"><use href="#i-star"/></svg></span><span class="sr-only">Calificación</span> 4.8 <span class="muted" style="font-weight:400">(126)</span></span></div></div>
+  <hr class="divider">
+  <dl><dt>Servicio</dt><dd>Baño y corte</dd><dt>Mascota</dt><dd>Max (perro)</dd><dt>Fecha</dt><dd>Vie 13 nov 2026</dd><dt>Hora</dt><dd>10:30 a. m.</dd><dt>Duración</dt><dd>1 h 30 min</dd></dl>
+  <hr class="divider"><div class="total"><span>Total</span><span>$45.000</span></div>
+  <p class="caption">Pagas directamente en el establecimiento.</p>
+  <a class="btn btn-primary btn-block btn-lg" href="confirmacion.html"><svg class="ic " aria-hidden="true"><use href="#i-check"/></svg> Confirmar reserva</a><a class="btn btn-ghost btn-block" href="reservar.html" style="margin-top:6px">Volver</a>
+</aside>
+</div>
+
+</div></main>
+<nav class="bottom-nav" aria-label="Navegación inferior"><a href="panel.html"><svg class="ic " aria-hidden="true"><use href="#i-house"/></svg>Inicio</a><a href="buscar.html" aria-current=page><svg class="ic " aria-hidden="true"><use href="#i-search"/></svg>Buscar</a><a href="reservas.html"><svg class="ic " aria-hidden="true"><use href="#i-calendar-check"/></svg>Reservas</a><a href="perfil.html"><svg class="ic " aria-hidden="true"><use href="#i-user"/></svg>Perfil</a></nav>
+<script src="app.js"></script>
+</body>
+</html>

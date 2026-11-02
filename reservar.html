@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Elegir fecha y hora · PetCare</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<script src="icons.js"></script>
+<a class="skip" href="#main">Saltar al contenido</a>
+<header class="topbar"><div class="container">
+  <a class="brand" href="panel.html" aria-label="PetCare, ir al inicio"><span class="brand-mark"><svg class="ic " aria-hidden="true"><use href="#i-paw-print"/></svg></span>PetCare</a>
+  <nav class="nav" aria-label="Navegación principal"><a href="panel.html"><svg class="ic " aria-hidden="true"><use href="#i-house"/></svg>Inicio</a><a href="buscar.html" aria-current=page><svg class="ic " aria-hidden="true"><use href="#i-search"/></svg>Buscar</a><a href="reservas.html"><svg class="ic " aria-hidden="true"><use href="#i-calendar-check"/></svg>Mis reservas</a><a href="perfil.html"><svg class="ic " aria-hidden="true"><use href="#i-user"/></svg>Mi perfil</a></nav>
+  <div class="topbar-actions">
+    <button class="icon-btn hide-m" aria-label="Notificaciones (1 nueva)"><svg class="ic " aria-hidden="true"><use href="#i-bell"/></svg><span class="dot"></span></button>
+    <a class="avatar" href="perfil.html" aria-label="Mi cuenta">VT</a>
+    <a class="icon-btn hide-m" href="login.html" aria-label="Cerrar sesión"><svg class="ic " aria-hidden="true"><use href="#i-log-out"/></svg></a>
+  </div>
+</div></header>
+<main id="main" class="page"><div class="container">
+
+<a href="proveedor.html" class="small row" style="gap:6px"><svg class="ic ic-sm" aria-hidden="true"><use href="#i-arrow-left"/></svg> Volver a Huellitas Spa</a>
+<h1 style="margin:12px 0 20px">Reservar: Baño y corte</h1>
+<ol class="stepper" aria-label="Pasos de la reserva"><li class="current" aria-current=step><span class="step-num">1</span><span class="step-label">Fecha y hora</span></li><li class=""><span class="step-num">2</span><span class="step-label">Revisar y confirmar</span></li><li class=""><span class="step-num">3</span><span class="step-label">Reserva confirmada</span></li></ol>
+<div class="layout-main-aside">
+  <div class="stack">
+    <section class="card card-pad" aria-labelledby="mas"><h2 id="mas" style="font-size:1.125rem">¿Para qué mascota?</h2>
+      <div class="row wrap" style="gap:8px"><button class="pill on" data-toggle-group="pet"><svg class="ic ic-sm" aria-hidden="true"><use href="#i-dog"/></svg> Max</button><button class="pill" data-toggle-group="pet"><svg class="ic ic-sm" aria-hidden="true"><use href="#i-plus"/></svg> Agregar otra</button></div></section>
+    <section class="card card-pad" aria-labelledby="fec">
+      <div class="row-between"><h2 id="fec" style="font-size:1.125rem;margin:0">1. Elige una fecha</h2>
+        <div class="row" style="gap:4px"><button class="icon-btn" aria-label="Mes anterior"><svg class="ic " aria-hidden="true"><use href="#i-chevron-left"/></svg></button><b style="min-width:130px;text-align:center">Noviembre 2026</b><button class="icon-btn" aria-label="Mes siguiente"><svg class="ic " aria-hidden="true"><use href="#i-chevron-right"/></svg></button></div></div>
+      <table class="cal" role="grid" aria-label="Noviembre 2026"><thead><tr><th>Lu</th><th>Ma</th><th>Mi</th><th>Ju</th><th>Vi</th><th>Sa</th><th>Do</th></tr></thead><tbody><tr><td></td><td></td><td></td><td></td><td></td><td></td><td><button class="today none" aria-label="1 de noviembre, no disponible" disabled>1</button></td></tr><tr><td><button class="" aria-label="2 de noviembre, disponible">2</button></td><td><button class="none" aria-label="3 de noviembre, no disponible" disabled>3</button></td><td><button class="" aria-label="4 de noviembre, disponible">4</button></td><td><button class="" aria-label="5 de noviembre, disponible">5</button></td><td><button class="" aria-label="6 de noviembre, disponible">6</button></td><td><button class="" aria-label="7 de noviembre, disponible">7</button></td><td><button class="none" aria-label="8 de noviembre, no disponible" disabled>8</button></td></tr><tr><td><button class="" aria-label="9 de noviembre, disponible">9</button></td><td><button class="" aria-label="10 de noviembre, disponible">10</button></td><td><button class="" aria-label="11 de noviembre, disponible">11</button></td><td><button class="" aria-label="12 de noviembre, disponible">12</button></td><td><button class="sel" aria-label="13 de noviembre, disponible" aria-pressed=true>13</button></td><td><button class="" aria-label="14 de noviembre, disponible">14</button></td><td><button class="none" aria-label="15 de noviembre, no disponible" disabled>15</button></td></tr><tr><td><button class="" aria-label="16 de noviembre, disponible">16</button></td><td><button class="none" aria-label="17 de noviembre, no disponible" disabled>17</button></td><td><button class="" aria-label="18 de noviembre, disponible">18</button></td><td><button class="" aria-label="19 de noviembre, disponible">19</button></td><td><button class="" aria-label="20 de noviembre, disponible">20</button></td><td><button class="" aria-label="21 de noviembre, disponible">21</button></td><td><button class="none" aria-label="22 de noviembre, no disponible" disabled>22</button></td></tr><tr><td><button class="" aria-label="23 de noviembre, disponible">23</button></td><td><button class="" aria-label="24 de noviembre, disponible">24</button></td><td><button class="" aria-label="25 de noviembre, disponible">25</button></td><td><button class="" aria-label="26 de noviembre, disponible">26</button></td><td><button class="" aria-label="27 de noviembre, disponible">27</button></td><td><button class="" aria-label="28 de noviembre, disponible">28</button></td><td><button class="none" aria-label="29 de noviembre, no disponible" disabled>29</button></td></tr><tr><td><button class="" aria-label="30 de noviembre, disponible">30</button></td><td></td><td></td><td></td><td></td><td></td><td></td></tr></tbody></table>
+      <div class="legend"><span><i style="background:var(--primary-50);border:1px solid var(--primary-300)"></i>Disponible</span><span><i style="background:var(--primary-600)"></i>Seleccionado</span><span><i style="background:#fff;border:1px solid #ccc"></i>Sin cupos</span></div>
+    </section>
+    <section class="card card-pad" aria-labelledby="hor">
+      <h2 id="hor" style="font-size:1.125rem">2. Elige una hora · <span class="muted" style="font-weight:600">viernes 13 de noviembre</span></h2>
+      <div class="slots"><button class="slot busy" disabled aria-label="8:00 ocupado">8:00</button><button class="slot busy" disabled aria-label="9:00 ocupado">9:00</button><button class="slot sel"  aria-label="10:30">10:30</button><button class="slot "  aria-label="12:00">12:00</button><button class="slot "  aria-label="1:30">1:30</button><button class="slot busy" disabled aria-label="2:00 ocupado">2:00</button><button class="slot "  aria-label="3:30">3:30</button><button class="slot "  aria-label="5:00">5:00</button></div>
+      <div class="legend" style="margin-top:12px"><span><i style="border:1.5px solid var(--primary-300)"></i>Disponible</span><span><i style="background:var(--primary-600)"></i>Seleccionada</span><span><i style="background:#F1F4F2"></i>Ocupada</span></div>
+      <div class="alert alert-warning" style="margin-top:16px"><svg class="ic " aria-hidden="true"><use href="#i-info"/></svg><div>¿No ves una hora que te sirva? Elige otro día en el calendario o <a href="buscar.html">consulta otro proveedor</a>.</div></div>
+    </section>
+    <section class="card card-pad"><div class="field"><label class="label" for="nt">Notas para el proveedor <span class="muted" style="font-weight:400">(opcional)</span></label><textarea id="nt" class="textarea" placeholder="Ej.: Max es nervioso con el secador.">Max es un poco nervioso con el secador.</textarea></div></section>
+  </div>
+  <aside class="card card-pad sticky summary">
+  <div class="row" style="gap:12px;margin-bottom:12px"><div class="thumb th-1" style="width:56px;height:56px"><svg class="ic ic-sm" aria-hidden="true"><use href="#i-scissors"/></svg></div><div><h3 style="margin:0">Huellitas Spa</h3><span class="rating"><span class="stars" aria-hidden="true"><svg class="ic" aria-hidden="true"><use href="#i-star"/></svg><svg class="ic" aria-hidden="true"><use href="#i-star"/></svg><svg class="ic" aria-hidden="true"><use href="#i-star"/></svg><svg class="ic" aria-hidden="true"><use href="#i-star"/></svg><svg class="ic" aria-hidden="true"><use href="#i-star"/></svg></span><span class="sr-only">Calificación</span> 4.8 <span class="muted" style="font-weight:400">(126)</span></span></div></div>
+  <hr class="divider">
+  <dl><dt>Servicio</dt><dd>Baño y corte</dd><dt>Mascota</dt><dd>Max (perro)</dd><dt>Fecha</dt><dd>Vie 13 nov 2026</dd><dt>Hora</dt><dd>10:30 a. m.</dd><dt>Duración</dt><dd>1 h 30 min</dd></dl>
+  <hr class="divider"><div class="total"><span>Total</span><span>$45.000</span></div>
+  <p class="caption">Pagas directamente en el establecimiento.</p>
+  <a class="btn btn-primary btn-block btn-lg" href="revisar.html">Continuar <svg class="ic " aria-hidden="true"><use href="#i-chevron-right"/></svg></a><p class="caption" style="text-align:center;margin:8px 0 0">Aún no se ha reservado. Revisarás todo en el siguiente paso.</p>
+</aside>
+</div>
+
+</div></main>
+<nav class="bottom-nav" aria-label="Navegación inferior"><a href="panel.html"><svg class="ic " aria-hidden="true"><use href="#i-house"/></svg>Inicio</a><a href="buscar.html" aria-current=page><svg class="ic " aria-hidden="true"><use href="#i-search"/></svg>Buscar</a><a href="reservas.html"><svg class="ic " aria-hidden="true"><use href="#i-calendar-check"/></svg>Reservas</a><a href="perfil.html"><svg class="ic " aria-hidden="true"><use href="#i-user"/></svg>Perfil</a></nav>
+<script src="app.js"></script>
+</body>
+</html>

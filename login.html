@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Iniciar sesión · PetCare</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<script src="icons.js"></script>
+
+<div class="auth"><aside class="auth-aside">
+  <a class="brand" href="index.html"><span class="brand-mark"><svg class="ic " aria-hidden="true"><use href="#i-paw-print"/></svg></span>PetCare</a>
+  <div>
+    <h2>Todo lo que tu mascota necesita, en un solo lugar.</h2>
+    <p>Compara proveedores, revisa opiniones y reserva sin llamar a cinco lugares distintos.</p>
+    <ul class="auth-list">
+      <li><svg class="ic " aria-hidden="true"><use href="#i-shield-check"/></svg> Proveedores con información verificada</li>
+      <li><svg class="ic " aria-hidden="true"><use href="#i-star"/></svg> Calificaciones de otros dueños</li>
+      <li><svg class="ic " aria-hidden="true"><use href="#i-calendar-check"/></svg> Horarios disponibles en tiempo real</li>
+    </ul>
+  </div>
+  <span class="caption" style="color:#CFEBDB">© 2026 PetCare</span>
+  <svg class="ic bigpaw" aria-hidden="true"><use href="#i-paw-print"/></svg>
+</aside>
+<main id="main" class="auth-main"><div class="auth-box">
+  <h1>Bienvenido de nuevo</h1>
+  <p class="muted">Ingresa para buscar y gestionar tus reservas.</p>
+  <div class="row" role="group" aria-label="Tipo de cuenta" style="margin:20px 0">
+    <button class="pill on" data-toggle-group="role"><svg class="ic ic-sm" aria-hidden="true"><use href="#i-paw-print"/></svg> Soy dueño de mascota</button>
+    <button class="pill" data-toggle-group="role"><svg class="ic ic-sm" aria-hidden="true"><use href="#i-briefcase"/></svg> Soy proveedor</button>
+  </div>
+  <form class="stack" action="panel.html">
+    <div class="field"><label class="label" for="em">Correo electrónico</label>
+      <div class="input-icon"><svg class="ic " aria-hidden="true"><use href="#i-mail"/></svg><input id="em" type="email" class="input" placeholder="tucorreo@ejemplo.com" value="valentina.torres@correo.com" autocomplete="email"></div></div>
+    <div class="field"><div class="row-between"><label class="label" for="pw">Contraseña</label><a href="#" class="small">¿La olvidaste?</a></div>
+      <div class="input-icon"><svg class="ic " aria-hidden="true"><use href="#i-lock"/></svg><input id="pw" type="password" class="input" value="contraseña" autocomplete="current-password"></div></div>
+    <label class="check"><input type="checkbox" checked> <span>Mantener sesión iniciada</span></label>
+    <button class="btn btn-primary btn-block btn-lg">Iniciar sesión</button>
+  </form>
+  <p class="or" style="margin:20px 0">o</p>
+  <a class="btn btn-secondary btn-block" href="proveedor-servicios.html"><svg class="ic " aria-hidden="true"><use href="#i-briefcase"/></svg> Entrar como proveedor (demo)</a>
+  <p class="muted" style="text-align:center;margin-top:24px">¿No tienes cuenta? <a href="registro.html">Regístrate gratis</a></p>
+</div></main></div>
+<script src="app.js"></script>
+</body>
+</html>

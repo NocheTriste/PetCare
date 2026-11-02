@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Guía de estilos · PetCare</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<script src="icons.js"></script>
+
+<style>
+.sg{max-width:1180px;margin:0 auto;padding:40px 24px}
+.sg section{background:#fff;border:1px solid var(--line);border-radius:20px;padding:32px;margin-bottom:24px}
+.sg h2{font-size:1.375rem;display:flex;align-items:center;gap:10px}
+.sg h2 .n{font-size:.8125rem;background:var(--primary-100);color:var(--primary-700);border-radius:999px;padding:2px 10px}
+.sg-swrow{display:grid;grid-template-columns:repeat(7,1fr);gap:14px;margin:10px 0 22px}
+.sg-sw{display:flex;flex-direction:column;gap:2px;font-size:.875rem}
+.sg-chip{height:72px;border-radius:12px;border:1px solid var(--line);display:flex;align-items:flex-end;padding:8px;font:600 .75rem ui-monospace,monospace;margin-bottom:6px}
+.sg-type td{padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:middle}
+.sg-lbl{font-size:.75rem;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;font-weight:600;margin:18px 0 10px}
+.sg-icons{display:grid;grid-template-columns:repeat(12,1fr);gap:10px}
+.sg-icons div{display:flex;flex-direction:column;align-items:center;gap:6px;font-size:.6875rem;color:var(--muted);padding:10px 4px;border:1px solid var(--line);border-radius:10px;text-align:center}
+.sg-icons .ic{width:24px;height:24px;color:var(--ink)}
+.sp{display:flex;align-items:flex-end;gap:18px}
+.sp div{display:flex;flex-direction:column;align-items:center;gap:6px;font-size:.75rem;color:var(--muted)}
+.sp i{display:block;background:var(--primary-300);border-radius:3px}
+</style>
+<div class="sg">
+<header class="row-between" style="margin-bottom:24px"><a class="brand" href="index.html"><span class="brand-mark"><svg class="ic " aria-hidden="true"><use href="#i-paw-print"/></svg></span>PetCare</a><span class="caption">Guía de estilos visual · UI Kit v2.0 · Noviembre 2026</span></header>
+
+<section id="sg-color"><h2><span class="n">01</span> Color</h2>
+<p class="muted">El verde transmite cuidado, salud y confianza (insight del mapa de empatía: “no sé si un proveedor es confiable”). El ámbar se reserva para calificaciones y acentos cálidos. Todos los textos cumplen contraste WCAG 2.1 AA (≥ 4,5:1).</p>
+<div class="sg-lbl">Primario</div><div class="sg-swrow"><div class="sg-sw"><div style="background:#F1F8F4;color:var(--ink)" class="sg-chip">#F1F8F4</div><b>Primario 50</b><span class="caption">--primary-50</span></div><div class="sg-sw"><div style="background:#DDEFE5;color:var(--ink)" class="sg-chip">#DDEFE5</div><b>Primario 100</b><span class="caption">--primary-100</span></div><div class="sg-sw"><div style="background:#8FCBA9;color:var(--ink)" class="sg-chip">#8FCBA9</div><b>Primario 300</b><span class="caption">--primary-300</span></div><div class="sg-sw"><div style="background:#2E8B5E;color:#fff" class="sg-chip">#2E8B5E</div><b>Primario 500</b><span class="caption">--primary-500</span></div><div class="sg-sw"><div style="background:#23744D;color:#fff" class="sg-chip">#23744D</div><b>Primario 600</b><span class="caption">--primary-600</span></div><div class="sg-sw"><div style="background:#1B5C3D;color:#fff" class="sg-chip">#1B5C3D</div><b>Primario 700</b><span class="caption">--primary-700</span></div></div>
+<div class="sg-lbl">Acento y neutros</div><div class="sg-swrow"><div class="sg-sw"><div style="background:#FFF1DC;color:var(--ink)" class="sg-chip">#FFF1DC</div><b>Acento 100</b><span class="caption">--accent-100</span></div><div class="sg-sw"><div style="background:#F2A33A;color:var(--ink)" class="sg-chip">#F2A33A</div><b>Acento 500</b><span class="caption">--accent-500</span></div><div class="sg-sw"><div style="background:#18241D;color:#fff" class="sg-chip">#18241D</div><b>Títulos</b><span class="caption">--ink</span></div><div class="sg-sw"><div style="background:#2E3B34;color:#fff" class="sg-chip">#2E3B34</div><b>Texto</b><span class="caption">--text</span></div><div class="sg-sw"><div style="background:#5C6B63;color:#fff" class="sg-chip">#5C6B63</div><b>Texto secundario</b><span class="caption">--muted</span></div><div class="sg-sw"><div style="background:#DCE4DF;color:var(--ink)" class="sg-chip">#DCE4DF</div><b>Bordes</b><span class="caption">--line</span></div><div class="sg-sw"><div style="background:#F6F9F7;color:var(--ink)" class="sg-chip">#F6F9F7</div><b>Fondo</b><span class="caption">--bg</span></div></div>
+<div class="sg-lbl">Estados</div><div class="sg-swrow"><div class="sg-sw"><div style="background:#1E7B4A;color:#fff" class="sg-chip">#1E7B4A</div><b>Éxito</b><span class="caption">--success</span></div><div class="sg-sw"><div style="background:#8A5A00;color:#fff" class="sg-chip">#8A5A00</div><b>Advertencia</b><span class="caption">--warning</span></div><div class="sg-sw"><div style="background:#B42318;color:#fff" class="sg-chip">#B42318</div><b>Error</b><span class="caption">--danger</span></div><div class="sg-sw"><div style="background:#1D5FA8;color:#fff" class="sg-chip">#1D5FA8</div><b>Información</b><span class="caption">--info</span></div></div>
+</section>
+
+<section id="sg-type"><h2><span class="n">02</span> Tipografía</h2>
+<p class="muted"><b>Nunito</b> (títulos): redondeada y amigable. <b>Inter</b> (texto e interfaz): muy legible en pantallas pequeñas. Tamaño base 16 px, interlineado 1,55.</p>
+<table class="sg-type" style="width:100%;border-collapse:collapse">
+<tr><td class="caption" style="width:200px">H1 · Nunito ExtraBold 32/38</td><td><h1 style="margin:0">Encuentra servicios para tu mascota</h1></td></tr>
+<tr><td class="caption">H2 · Nunito ExtraBold 24/29</td><td><h2 style="margin:0">Recomendados cerca de ti</h2></td></tr>
+<tr><td class="caption">H3 · Nunito Bold 18/22</td><td><h3 style="margin:0">Huellitas Spa</h3></td></tr>
+<tr><td class="caption">Cuerpo · Inter Regular 16/25</td><td>Peluquería canina y felina con productos hipoalergénicos.</td></tr>
+<tr><td class="caption">Etiqueta · Inter SemiBold 15</td><td><span class="label">Correo electrónico</span></td></tr>
+<tr><td class="caption">Pequeño · Inter Regular 13</td><td><span class="caption">Cancelación gratuita hasta 24 h antes.</span></td></tr>
+<tr><td class="caption">Precio · Nunito ExtraBold 20</td><td><span class="price">$45.000 <small>baño y corte</small></span></td></tr>
+</table></section>
+
+<section id="sg-space"><h2><span class="n">03</span> Espaciado, radios y sombras</h2>
+<div class="grid grid-3">
+<div><div class="sg-lbl">Espaciado (base 4 px)</div><div class="sp"><div><i style="width:4px;height:4px"></i>4</div><div><i style="width:8px;height:8px"></i>8</div><div><i style="width:12px;height:12px"></i>12</div><div><i style="width:16px;height:16px"></i>16</div><div><i style="width:24px;height:24px"></i>24</div><div><i style="width:32px;height:32px"></i>32</div><div><i style="width:48px;height:48px"></i>48</div></div></div>
+<div><div class="sg-lbl">Radios</div><div class="sp"><div><i style="width:48px;height:48px;border-radius:8px;background:var(--primary-100);border:2px solid var(--primary-500)"></i>8 px</div><div><i style="width:48px;height:48px;border-radius:12px;background:var(--primary-100);border:2px solid var(--primary-500)"></i>12 px</div><div><i style="width:48px;height:48px;border-radius:16px;background:var(--primary-100);border:2px solid var(--primary-500)"></i>16 px</div><div><i style="width:48px;height:48px;border-radius:24px;background:var(--primary-100);border:2px solid var(--primary-500)"></i>24 px</div></div></div>
+<div><div class="sg-lbl">Sombras</div><div class="sp"><div><i style="width:64px;height:48px;background:#fff;border-radius:10px;box-shadow:var(--sh-1)"></i>Nivel 1</div><div><i style="width:64px;height:48px;background:#fff;border-radius:10px;box-shadow:var(--sh-2)"></i>Nivel 2</div><div><i style="width:64px;height:48px;background:#fff;border-radius:10px;box-shadow:var(--sh-3)"></i>Nivel 3</div></div></div>
+</div></section>
+
+<section id="sg-buttons"><h2><span class="n">04</span> Botones</h2>
+<p class="muted">Altura mínima 44 px (área táctil). Un solo botón primario por vista para marcar la acción principal.</p>
+<div class="sg-lbl">Variantes</div>
+<div class="row wrap"><button class="btn btn-primary"><svg class="ic " aria-hidden="true"><use href="#i-calendar-check"/></svg> Primario</button><button class="btn btn-secondary">Secundario</button><button class="btn btn-ghost">Terciario</button><button class="btn btn-danger">Peligro</button><button class="btn" disabled>Deshabilitado</button></div>
+<div class="sg-lbl">Estados del primario</div>
+<div class="row wrap"><button class="btn btn-primary">Normal</button><button class="btn btn-primary" style="background:var(--primary-700)">Hover</button><button class="btn btn-primary" style="box-shadow:var(--focus)">Foco (teclado)</button></div>
+<div class="sg-lbl">Tamaños</div>
+<div class="row wrap"><button class="btn btn-primary btn-sm">Pequeño 36</button><button class="btn btn-primary">Mediano 44</button><button class="btn btn-primary btn-lg">Grande 52</button><button class="icon-btn" aria-label="Notificaciones"><svg class="ic " aria-hidden="true"><use href="#i-bell"/></svg></button></div>
+</section>
+
+<section id="sg-forms"><h2><span class="n">05</span> Formularios</h2>
+<div class="grid grid-3">
+<div class="field"><label class="label">Normal</label><div class="input-icon"><svg class="ic " aria-hidden="true"><use href="#i-mail"/></svg><input class="input" placeholder="tucorreo@ejemplo.com"></div><span class="hint">Texto de ayuda</span></div>
+<div class="field"><label class="label">Foco</label><input class="input" value="Valentina" style="border-color:var(--primary-500);box-shadow:0 0 0 3px var(--primary-100)"></div>
+<div class="field has-error"><label class="label">Error <span class="req">*</span></label><input class="input" value="valentina@correo"><span class="error-msg"><svg class="ic ic-sm" aria-hidden="true"><use href="#i-circle-alert"/></svg> Escribe un correo válido</span></div>
+<div class="field"><label class="label">Lista desplegable</label><select class="select"><option>Peluquería</option></select></div>
+<div class="field"><label class="label">Control deslizante</label><input type="range" class="range" value="40"></div>
+<div class="stack" style="--x:0"><label class="check"><input type="checkbox" checked> Casilla marcada</label><label class="check"><input type="checkbox"> Casilla sin marcar</label></div>
+</div></section>
+
+<section id="sg-comp"><h2><span class="n">06</span> Componentes</h2>
+<div class="sg-lbl">Etiquetas de estado, filtros activos y selectores</div>
+<div class="row wrap"><span class="badge badge-green">Confirmada</span><span class="badge badge-amber">Pendiente</span><span class="badge badge-red">Cancelada</span><span class="badge badge-blue"><svg class="ic ic-sm" aria-hidden="true"><use href="#i-shield-check"/></svg> Verificado</span><span class="badge badge-gray">Peluquería</span>
+<span style="width:16px"></span><button class="chip">Peluquería <svg class="ic " aria-hidden="true"><use href="#i-x"/></svg></button><button class="pill on">4.5+</button><button class="pill">Mañana</button></div>
+<div class="sg-lbl">Calificación</div>
+<div class="row wrap" style="gap:32px"><span class="rating"><span class="stars" aria-hidden="true"><svg class="ic" aria-hidden="true"><use href="#i-star"/></svg><svg class="ic" aria-hidden="true"><use href="#i-star"/></svg><svg class="ic" aria-hidden="true"><use href="#i-star"/></svg><svg class="ic" aria-hidden="true"><use href="#i-star"/></svg><svg class="ic" aria-hidden="true"><use href="#i-star"/></svg></span><span class="sr-only">Calificación</span> 4.8 <span class="muted" style="font-weight:400">(126 opiniones)</span></span><div class="rating-input"><button class="on"><svg class="ic " aria-hidden="true"><use href="#i-star"/></svg></button><button class="on"><svg class="ic " aria-hidden="true"><use href="#i-star"/></svg></button><button class="on"><svg class="ic " aria-hidden="true"><use href="#i-star"/></svg></button><button class="on"><svg class="ic " aria-hidden="true"><use href="#i-star"/></svg></button><button class=""><svg class="ic " aria-hidden="true"><use href="#i-star"/></svg></button></div></div>
+<div class="sg-lbl">Tarjeta de categoría y tarjeta de proveedor</div>
+<div class="grid" style="grid-template-columns:200px 1fr;align-items:start"><a class="card cat" href="#"><span class="cat-icon"><svg class="ic " aria-hidden="true"><use href="#i-house-heart"/></svg></span>Guardería<small>Cuidado por días</small></a><article class="card card-hover provider">
+  <div class="thumb th-1"><svg class="ic " aria-hidden="true"><use href="#i-scissors"/></svg></div>
+  <div>
+    <div class="row wrap" style="gap:8px;margin-bottom:4px"><span class="badge badge-gray">Peluquería</span><span class="badge badge-blue"><svg class="ic ic-sm" aria-hidden="true"><use href="#i-shield-check"/></svg> Verificado</span></div>
+    <h3><a href="proveedor.html" style="color:var(--ink)">Huellitas Spa</a></h3>
+    <div class="meta"><span class="rating"><span class="stars" aria-hidden="true"><svg class="ic" aria-hidden="true"><use href="#i-star"/></svg><svg class="ic" aria-hidden="true"><use href="#i-star"/></svg><svg class="ic" aria-hidden="true"><use href="#i-star"/></svg><svg class="ic" aria-hidden="true"><use href="#i-star"/></svg><svg class="ic" aria-hidden="true"><use href="#i-star"/></svg></span><span class="sr-only">Calificación</span> 4.8 <span class="muted" style="font-weight:400">(126 opiniones)</span></span><span><svg class="ic ic-sm" aria-hidden="true"><use href="#i-map-pin"/></svg>Chapinero · 1,2 km</span></div>
+    <span class="badge badge-green"><svg class="ic ic-sm" aria-hidden="true"><use href="#i-clock"/></svg> Hoy desde 2:00 p. m.</span>
+  </div>
+  <div class="p-cta" style="display:flex;flex-direction:column;align-items:flex-end;gap:10px">
+    <span class="price">$45.000 <small>baño y corte</small></span>
+    <a class="btn btn-primary btn-sm" href="proveedor.html">Ver proveedor <svg class="ic ic-sm" aria-hidden="true"><use href="#i-chevron-right"/></svg></a>
+  </div>
+</article></div>
+<div class="sg-lbl">Alertas</div>
+<div class="grid grid-2" style="gap:10px"><div class="alert alert-info"><svg class="ic " aria-hidden="true"><use href="#i-info"/></svg> Tu reserva aún no está confirmada.</div><div class="alert alert-success"><svg class="ic " aria-hidden="true"><use href="#i-circle-check"/></svg> Reserva confirmada.</div><div class="alert alert-warning"><svg class="ic " aria-hidden="true"><use href="#i-info"/></svg> No hay horarios ese día.</div><div class="alert alert-danger"><svg class="ic " aria-hidden="true"><use href="#i-circle-alert"/></svg> No se pudo guardar.</div></div>
+<div class="sg-lbl">Indicador de pasos (reserva)</div><ol class="stepper" aria-label="Pasos de la reserva"><li class="done"><span class="step-num"><svg class="ic ic-sm" aria-hidden="true"><use href="#i-check"/></svg></span><span class="step-label">Fecha y hora</span></li><li class="current" aria-current=step><span class="step-num">2</span><span class="step-label">Revisar y confirmar</span></li><li class=""><span class="step-num">3</span><span class="step-label">Reserva confirmada</span></li></ol>
+<div class="sg-lbl">Horarios</div>
+<div class="slots" style="max-width:520px"><button class="slot">Disponible</button><button class="slot sel">Seleccionada</button><button class="slot busy">Ocupada</button><button class="slot">3:30</button></div>
+</section>
+
+<section id="sg-icons"><h2><span class="n">07</span> Iconografía</h2>
+<p class="muted">Set Lucide (licencia ISC), trazo 2 px, 20–24 px. Los íconos siempre van acompañados de texto o de una etiqueta accesible.</p>
+<div class="sg-icons"><div><svg class="ic " aria-hidden="true"><use href="#i-paw-print"/></svg>paw-print</div><div><svg class="ic " aria-hidden="true"><use href="#i-search"/></svg>search</div><div><svg class="ic " aria-hidden="true"><use href="#i-sliders-horizontal"/></svg>sliders-horizontal</div><div><svg class="ic " aria-hidden="true"><use href="#i-map-pin"/></svg>map-pin</div><div><svg class="ic " aria-hidden="true"><use href="#i-clock"/></svg>clock</div><div><svg class="ic " aria-hidden="true"><use href="#i-calendar"/></svg>calendar</div><div><svg class="ic " aria-hidden="true"><use href="#i-calendar-check"/></svg>calendar-check</div><div><svg class="ic " aria-hidden="true"><use href="#i-star"/></svg>star</div><div><svg class="ic " aria-hidden="true"><use href="#i-stethoscope"/></svg>stethoscope</div><div><svg class="ic " aria-hidden="true"><use href="#i-scissors"/></svg>scissors</div><div><svg class="ic " aria-hidden="true"><use href="#i-footprints"/></svg>footprints</div><div><svg class="ic " aria-hidden="true"><use href="#i-house-heart"/></svg>house-heart</div><div><svg class="ic " aria-hidden="true"><use href="#i-dog"/></svg>dog</div><div><svg class="ic " aria-hidden="true"><use href="#i-user"/></svg>user</div><div><svg class="ic " aria-hidden="true"><use href="#i-bell"/></svg>bell</div><div><svg class="ic " aria-hidden="true"><use href="#i-shield-check"/></svg>shield-check</div><div><svg class="ic " aria-hidden="true"><use href="#i-circle-check"/></svg>circle-check</div><div><svg class="ic " aria-hidden="true"><use href="#i-circle-alert"/></svg>circle-alert</div><div><svg class="ic " aria-hidden="true"><use href="#i-info"/></svg>info</div><div><svg class="ic " aria-hidden="true"><use href="#i-pencil"/></svg>pencil</div><div><svg class="ic " aria-hidden="true"><use href="#i-trash-2"/></svg>trash-2</div><div><svg class="ic " aria-hidden="true"><use href="#i-plus"/></svg>plus</div><div><svg class="ic " aria-hidden="true"><use href="#i-x"/></svg>x</div><div><svg class="ic " aria-hidden="true"><use href="#i-chart-column"/></svg>chart-column</div></div></section>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Servicios para tu mascota · PetCare</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<script src="icons.js"></script>
+
+<a class="skip" href="#main">Saltar al contenido</a>
+<header class="topbar"><div class="container">
+  <a class="brand" href="index.html"><span class="brand-mark"><svg class="ic " aria-hidden="true"><use href="#i-paw-print"/></svg></span>PetCare</a>
+  <nav class="nav" aria-label="Navegación principal"><a href="#como">¿Cómo funciona?</a><a href="#servicios">Servicios</a><a href="login.html">Soy proveedor</a></nav>
+  <div class="topbar-actions"><a class="btn btn-ghost hide-m" href="login.html">Iniciar sesión</a><a class="btn btn-primary" href="registro.html">Crear cuenta</a></div>
+</div></header>
+<main id="main">
+<section class="hero"><div class="container">
+  <span class="badge badge-green"><svg class="ic ic-sm" aria-hidden="true"><use href="#i-shield-check"/></svg> Proveedores verificados en Bogotá</span>
+  <h1 style="margin-top:16px">Encuentra y reserva servicios confiables para tu mascota</h1>
+  <p>Compara veterinarias, peluquerías, paseadores y guarderías cercanas. Revisa opiniones reales, consulta horarios y reserva en minutos.</p>
+  <form class="searchbar" action="buscar.html" role="search">
+    <label class="sr-only" for="q">¿Qué servicio necesitas?</label>
+    <select id="q" class="select"><option>Peluquería</option><option>Veterinaria</option><option>Paseo</option><option>Guardería</option></select>
+    <label class="sr-only" for="loc">Ubicación</label>
+    <div class="input-icon"><svg class="ic " aria-hidden="true"><use href="#i-map-pin"/></svg><input id="loc" class="input" value="Chapinero, Bogotá"></div>
+    <label class="sr-only" for="when">Fecha</label>
+    <div class="input-icon"><svg class="ic " aria-hidden="true"><use href="#i-calendar"/></svg><input id="when" class="input" value="Cualquier fecha"></div>
+    <button class="btn btn-primary btn-lg"><svg class="ic " aria-hidden="true"><use href="#i-search"/></svg> Buscar</button>
+  </form>
+</div></section>
+<section class="container" id="servicios" style="padding:48px 24px">
+  <h2>¿Qué necesita tu mascota hoy?</h2>
+  <div class="grid grid-4" style="margin-top:20px"><a class="card card-hover cat" href="buscar.html"><span class="cat-icon"><svg class="ic " aria-hidden="true"><use href="#i-stethoscope"/></svg></span>Veterinaria<small>Consultas y vacunas</small></a><a class="card card-hover cat" href="buscar.html"><span class="cat-icon"><svg class="ic " aria-hidden="true"><use href="#i-scissors"/></svg></span>Peluquería<small>Baño y corte</small></a><a class="card card-hover cat" href="buscar.html"><span class="cat-icon"><svg class="ic " aria-hidden="true"><use href="#i-footprints"/></svg></span>Paseo<small>Paseos por horas</small></a><a class="card card-hover cat" href="buscar.html"><span class="cat-icon"><svg class="ic " aria-hidden="true"><use href="#i-house-heart"/></svg></span>Guardería<small>Cuidado por días</small></a></div>
+</section>
+<section class="container" id="como" style="padding:0 24px 64px">
+  <h2>Así de fácil</h2>
+  <div class="grid grid-3" style="margin-top:20px">
+    <div class="card card-pad"><span class="cat-icon" style="margin-bottom:12px"><svg class="ic " aria-hidden="true"><use href="#i-search"/></svg></span><h3>1. Busca y compara</h3><p class="muted">Filtra por servicio, ubicación, precio, calificación y disponibilidad.</p></div>
+    <div class="card card-pad"><span class="cat-icon" style="margin-bottom:12px"><svg class="ic " aria-hidden="true"><use href="#i-star"/></svg></span><h3>2. Elige con confianza</h3><p class="muted">Lee opiniones de otros dueños y revisa la información completa del proveedor.</p></div>
+    <div class="card card-pad"><span class="cat-icon" style="margin-bottom:12px"><svg class="ic " aria-hidden="true"><use href="#i-calendar-check"/></svg></span><h3>3. Reserva en minutos</h3><p class="muted">Elige fecha y hora disponibles, revisa el resumen y confirma.</p></div>
+  </div>
+</section>
+</main>
+<footer class="footer"><div class="container row-between wrap"><span>© 2026 PetCare · Proyecto académico</span><span>Términos · Privacidad · Ayuda</span></div></footer>
+
+<script src="app.js"></script>
+</body>
+</html>

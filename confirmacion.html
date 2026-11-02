@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reserva confirmada · PetCare</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<script src="icons.js"></script>
+<a class="skip" href="#main">Saltar al contenido</a>
+<header class="topbar"><div class="container">
+  <a class="brand" href="panel.html" aria-label="PetCare, ir al inicio"><span class="brand-mark"><svg class="ic " aria-hidden="true"><use href="#i-paw-print"/></svg></span>PetCare</a>
+  <nav class="nav" aria-label="Navegación principal"><a href="panel.html"><svg class="ic " aria-hidden="true"><use href="#i-house"/></svg>Inicio</a><a href="buscar.html"><svg class="ic " aria-hidden="true"><use href="#i-search"/></svg>Buscar</a><a href="reservas.html" aria-current=page><svg class="ic " aria-hidden="true"><use href="#i-calendar-check"/></svg>Mis reservas</a><a href="perfil.html"><svg class="ic " aria-hidden="true"><use href="#i-user"/></svg>Mi perfil</a></nav>
+  <div class="topbar-actions">
+    <button class="icon-btn hide-m" aria-label="Notificaciones (1 nueva)"><svg class="ic " aria-hidden="true"><use href="#i-bell"/></svg><span class="dot"></span></button>
+    <a class="avatar" href="perfil.html" aria-label="Mi cuenta">VT</a>
+    <a class="icon-btn hide-m" href="login.html" aria-label="Cerrar sesión"><svg class="ic " aria-hidden="true"><use href="#i-log-out"/></svg></a>
+  </div>
+</div></header>
+<main id="main" class="page"><div class="container">
+
+<ol class="stepper" aria-label="Pasos de la reserva"><li class="done"><span class="step-num"><svg class="ic ic-sm" aria-hidden="true"><use href="#i-check"/></svg></span><span class="step-label">Fecha y hora</span></li><li class="done"><span class="step-num"><svg class="ic ic-sm" aria-hidden="true"><use href="#i-check"/></svg></span><span class="step-label">Revisar y confirmar</span></li><li class="current" aria-current=step><span class="step-num">3</span><span class="step-label">Reserva confirmada</span></li></ol>
+<div class="card card-pad" style="max-width:640px;margin:0 auto;text-align:center;padding:40px 32px">
+  <div class="success-icon"><svg class="ic " aria-hidden="true"><use href="#i-circle-check"/></svg></div>
+  <h1>¡Reserva confirmada!</h1>
+  <p class="muted">Te enviamos los detalles a <b>valentina.torres@correo.com</b>. Huellitas Spa ya recibió tu solicitud.</p>
+  <p>Código de reserva: <span class="code">PC-2611-0458</span></p>
+  <div class="summary" style="text-align:left;background:var(--bg);border-radius:var(--r-md);padding:20px;margin:24px 0">
+    <dl><dt>Servicio</dt><dd>Baño y corte · Max</dd><dt>Lugar</dt><dd>Huellitas Spa, Chapinero</dd><dt>Fecha</dt><dd>Vie 13 nov 2026</dd><dt>Hora</dt><dd>10:30 a. m.</dd><dt>Total (pago en el lugar)</dt><dd>$45.000</dd></dl>
+  </div>
+  <h3 style="text-align:left">¿Qué sigue?</h3>
+  <ul style="text-align:left;padding-left:20px;margin:0 0 24px" class="muted">
+    <li>Te recordaremos la cita un día antes.</li>
+    <li>Puedes cancelar o reprogramar gratis desde <b>Mis reservas</b> hasta 24 h antes.</li>
+    <li>Después del servicio te pediremos calificarlo.</li>
+  </ul>
+  <div class="row wrap" style="justify-content:center"><a class="btn btn-primary" href="reservas.html"><svg class="ic " aria-hidden="true"><use href="#i-calendar-check"/></svg> Ver mis reservas</a><a class="btn btn-secondary" href="panel.html">Volver al inicio</a></div>
+</div>
+
+</div></main>
+<nav class="bottom-nav" aria-label="Navegación inferior"><a href="panel.html"><svg class="ic " aria-hidden="true"><use href="#i-house"/></svg>Inicio</a><a href="buscar.html"><svg class="ic " aria-hidden="true"><use href="#i-search"/></svg>Buscar</a><a href="reservas.html" aria-current=page><svg class="ic " aria-hidden="true"><use href="#i-calendar-check"/></svg>Reservas</a><a href="perfil.html"><svg class="ic " aria-hidden="true"><use href="#i-user"/></svg>Perfil</a></nav>
+<script src="app.js"></script>
+</body>
+</html>

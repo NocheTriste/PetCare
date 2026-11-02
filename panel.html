@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Inicio · PetCare</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<script src="icons.js"></script>
+<a class="skip" href="#main">Saltar al contenido</a>
+<header class="topbar"><div class="container">
+  <a class="brand" href="panel.html" aria-label="PetCare, ir al inicio"><span class="brand-mark"><svg class="ic " aria-hidden="true"><use href="#i-paw-print"/></svg></span>PetCare</a>
+  <nav class="nav" aria-label="Navegación principal"><a href="panel.html" aria-current=page><svg class="ic " aria-hidden="true"><use href="#i-house"/></svg>Inicio</a><a href="buscar.html"><svg class="ic " aria-hidden="true"><use href="#i-search"/></svg>Buscar</a><a href="reservas.html"><svg class="ic " aria-hidden="true"><use href="#i-calendar-check"/></svg>Mis reservas</a><a href="perfil.html"><svg class="ic " aria-hidden="true"><use href="#i-user"/></svg>Mi perfil</a></nav>
+  <div class="topbar-actions">
+    <button class="icon-btn hide-m" aria-label="Notificaciones (1 nueva)"><svg class="ic " aria-hidden="true"><use href="#i-bell"/></svg><span class="dot"></span></button>
+    <a class="avatar" href="perfil.html" aria-label="Mi cuenta">VT</a>
+    <a class="icon-btn hide-m" href="login.html" aria-label="Cerrar sesión"><svg class="ic " aria-hidden="true"><use href="#i-log-out"/></svg></a>
+  </div>
+</div></header>
+<main id="main" class="page"><div class="container">
+
+<section class="welcome">
+  <svg class="ic bigpaw" aria-hidden="true"><use href="#i-paw-print"/></svg>
+  <h1>¡Hola, Valentina!</h1>
+  <p>¿Qué necesita Max hoy?</p>
+  <form class="searchbar" action="buscar.html" role="search" style="box-shadow:none;margin-top:16px;max-width:900px">
+    <label class="sr-only" for="q2">Servicio</label>
+    <select id="q2" class="select"><option>Peluquería</option><option>Veterinaria</option><option>Paseo</option><option>Guardería</option></select>
+    <div class="input-icon"><svg class="ic " aria-hidden="true"><use href="#i-map-pin"/></svg><input class="input" value="Chapinero, Bogotá" aria-label="Ubicación"></div>
+    <div class="input-icon"><svg class="ic " aria-hidden="true"><use href="#i-calendar"/></svg><input class="input" value="Cualquier fecha" aria-label="Fecha"></div>
+    <button class="btn btn-primary"><svg class="ic " aria-hidden="true"><use href="#i-search"/></svg> Buscar</button>
+  </form>
+</section>
+
+<div class="section-title"><h2>Servicios</h2></div>
+<div class="grid grid-4"><a class="card card-hover cat" href="buscar.html"><span class="cat-icon"><svg class="ic " aria-hidden="true"><use href="#i-stethoscope"/></svg></span>Veterinaria<small>Consultas y vacunas</small></a><a class="card card-hover cat" href="buscar.html"><span class="cat-icon"><svg class="ic " aria-hidden="true"><use href="#i-scissors"/></svg></span>Peluquería<small>Baño y corte</small></a><a class="card card-hover cat" href="buscar.html"><span class="cat-icon"><svg class="ic " aria-hidden="true"><use href="#i-footprints"/></svg></span>Paseo<small>Paseos por horas</small></a><a class="card card-hover cat" href="buscar.html"><span class="cat-icon"><svg class="ic " aria-hidden="true"><use href="#i-house-heart"/></svg></span>Guardería<small>Cuidado por días</small></a></div>
+
+<div class="grid" style="grid-template-columns:minmax(0,1fr) 380px;margin-top:8px" id="dash-cols">
+  <div>
+    <div class="section-title"><h2>Recomendados cerca de ti</h2><a href="buscar.html">Ver todos</a></div>
+    <div class="grid grid-3"><a class="card card-hover" href="proveedor.html" style="color:inherit;text-decoration:none;overflow:hidden">
+  <div class="thumb th-1" style="width:100%;height:120px;border-radius:0"><svg class="ic " aria-hidden="true"><use href="#i-scissors"/></svg></div>
+  <div style="padding:16px"><span class="badge badge-gray">Peluquería</span><h3 style="margin:8px 0 4px">Huellitas Spa</h3>
+  <div class="meta" style="margin:0 0 8px"><span class="rating"><span class="stars" aria-hidden="true"><svg class="ic" aria-hidden="true"><use href="#i-star"/></svg><svg class="ic" aria-hidden="true"><use href="#i-star"/></svg><svg class="ic" aria-hidden="true"><use href="#i-star"/></svg><svg class="ic" aria-hidden="true"><use href="#i-star"/></svg><svg class="ic" aria-hidden="true"><use href="#i-star"/></svg></span><span class="sr-only">Calificación</span> 4.8 <span class="muted" style="font-weight:400">(126)</span></span><span><svg class="ic ic-sm" aria-hidden="true"><use href="#i-map-pin"/></svg>1,2 km</span></div>
+  <span class="price">$45.000 <small>baño y corte</small></span></div></a><a class="card card-hover" href="proveedor.html" style="color:inherit;text-decoration:none;overflow:hidden">
+  <div class="thumb th-3" style="width:100%;height:120px;border-radius:0"><svg class="ic " aria-hidden="true"><use href="#i-stethoscope"/></svg></div>
+  <div style="padding:16px"><span class="badge badge-gray">Veterinaria</span><h3 style="margin:8px 0 4px">Clínica Veterinaria San Roque</h3>
+  <div class="meta" style="margin:0 0 8px"><span class="rating"><span class="stars" aria-hidden="true"><svg class="ic" aria-hidden="true"><use href="#i-star"/></svg><svg class="ic" aria-hidden="true"><use href="#i-star"/></svg><svg class="ic" aria-hidden="true"><use href="#i-star"/></svg><svg class="ic" aria-hidden="true"><use href="#i-star"/></svg><svg class="ic" aria-hidden="true"><use href="#i-star"/></svg></span><span class="sr-only">Calificación</span> 4.7 <span class="muted" style="font-weight:400">(214)</span></span><span><svg class="ic ic-sm" aria-hidden="true"><use href="#i-map-pin"/></svg>2,5 km</span></div>
+  <span class="price">$60.000 <small>consulta</small></span></div></a><a class="card card-hover" href="proveedor.html" style="color:inherit;text-decoration:none;overflow:hidden">
+  <div class="thumb th-4" style="width:100%;height:120px;border-radius:0"><svg class="ic " aria-hidden="true"><use href="#i-house-heart"/></svg></div>
+  <div style="padding:16px"><span class="badge badge-gray">Guardería</span><h3 style="margin:8px 0 4px">Patitas Home</h3>
+  <div class="meta" style="margin:0 0 8px"><span class="rating"><span class="stars" aria-hidden="true"><svg class="ic" aria-hidden="true"><use href="#i-star"/></svg><svg class="ic" aria-hidden="true"><use href="#i-star"/></svg><svg class="ic" aria-hidden="true"><use href="#i-star"/></svg><svg class="ic" aria-hidden="true"><use href="#i-star"/></svg><svg class="ic" aria-hidden="true"><use href="#i-star"/></svg></span><span class="sr-only">Calificación</span> 4.9 <span class="muted" style="font-weight:400">(64)</span></span><span><svg class="ic ic-sm" aria-hidden="true"><use href="#i-map-pin"/></svg>4,1 km</span></div>
+  <span class="price">$55.000 <small>por día</small></span></div></a></div>
+  </div>
+  <div>
+    <div class="section-title"><h2>Próxima reserva</h2><a href="reservas.html">Mis reservas</a></div>
+    <div class="card">
+      <div class="booking-mini"><div class="date-box"><span>Vie</span><b>13</b><span>Nov</span></div>
+        <div style="flex:1"><h4 style="margin:0">Baño y corte · Max</h4><div class="caption">Huellitas Spa · 10:30 a. m.</div></div>
+        <span class="badge badge-green">Confirmada</span></div>
+      <hr class="divider" style="margin:0">
+      <div class="booking-mini"><span class="cat-icon" style="width:44px;height:44px;background:var(--accent-100);color:var(--accent-700)"><svg class="ic " aria-hidden="true"><use href="#i-star"/></svg></span>
+        <div style="flex:1"><h4 style="margin:0">¿Cómo le fue a Max?</h4><div class="caption">Califica tu visita a Clínica San Roque</div></div>
+        <a class="btn btn-secondary btn-sm" href="calificar.html">Calificar</a></div>
+    </div>
+  </div>
+</div>
+<style>@media(max-width:980px){#dash-cols{grid-template-columns:1fr!important}}</style>
+
+</div></main>
+<nav class="bottom-nav" aria-label="Navegación inferior"><a href="panel.html" aria-current=page><svg class="ic " aria-hidden="true"><use href="#i-house"/></svg>Inicio</a><a href="buscar.html"><svg class="ic " aria-hidden="true"><use href="#i-search"/></svg>Buscar</a><a href="reservas.html"><svg class="ic " aria-hidden="true"><use href="#i-calendar-check"/></svg>Reservas</a><a href="perfil.html"><svg class="ic " aria-hidden="true"><use href="#i-user"/></svg>Perfil</a></nav>
+<script src="app.js"></script>
+</body>
+</html>

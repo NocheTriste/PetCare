@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mi perfil · PetCare</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<script src="icons.js"></script>
+<a class="skip" href="#main">Saltar al contenido</a>
+<header class="topbar"><div class="container">
+  <a class="brand" href="panel.html" aria-label="PetCare, ir al inicio"><span class="brand-mark"><svg class="ic " aria-hidden="true"><use href="#i-paw-print"/></svg></span>PetCare</a>
+  <nav class="nav" aria-label="Navegación principal"><a href="panel.html"><svg class="ic " aria-hidden="true"><use href="#i-house"/></svg>Inicio</a><a href="buscar.html"><svg class="ic " aria-hidden="true"><use href="#i-search"/></svg>Buscar</a><a href="reservas.html"><svg class="ic " aria-hidden="true"><use href="#i-calendar-check"/></svg>Mis reservas</a><a href="perfil.html" aria-current=page><svg class="ic " aria-hidden="true"><use href="#i-user"/></svg>Mi perfil</a></nav>
+  <div class="topbar-actions">
+    <button class="icon-btn hide-m" aria-label="Notificaciones (1 nueva)"><svg class="ic " aria-hidden="true"><use href="#i-bell"/></svg><span class="dot"></span></button>
+    <a class="avatar" href="perfil.html" aria-label="Mi cuenta">VT</a>
+    <a class="icon-btn hide-m" href="login.html" aria-label="Cerrar sesión"><svg class="ic " aria-hidden="true"><use href="#i-log-out"/></svg></a>
+  </div>
+</div></header>
+<main id="main" class="page"><div class="container">
+
+<h1>Mi perfil</h1>
+<div class="layout-main-aside" style="grid-template-columns:minmax(0,1fr) 360px">
+  <section class="card card-pad"><h2 style="font-size:1.125rem">Datos personales</h2>
+    <form class="stack" style="margin-top:12px">
+      <div class="grid grid-2" style="gap:12px"><div class="field"><label class="label" for="pn">Nombre</label><input id="pn" class="input" value="Valentina"></div><div class="field"><label class="label" for="pa">Apellido</label><input id="pa" class="input" value="Torres"></div></div>
+      <div class="field"><label class="label" for="pe">Correo electrónico</label><input id="pe" class="input" value="valentina.torres@correo.com"></div>
+      <div class="grid grid-2" style="gap:12px"><div class="field"><label class="label" for="pt">Celular</label><input id="pt" class="input" value="300 123 4567"></div><div class="field"><label class="label" for="pz">Barrio / zona</label><input id="pz" class="input" value="Chapinero, Bogotá"></div></div>
+      <div class="row"><button type="button" class="btn btn-primary">Guardar cambios</button><button type="button" class="btn btn-ghost">Cancelar</button></div>
+    </form></section>
+  <section class="card card-pad"><div class="row-between"><h2 style="font-size:1.125rem;margin:0">Mis mascotas</h2><button class="btn btn-secondary btn-sm"><svg class="ic ic-sm" aria-hidden="true"><use href="#i-plus"/></svg> Agregar</button></div>
+    <div class="card" style="display:flex;gap:12px;align-items:center;padding:14px;margin-top:14px"><span class="cat-icon" style="width:48px;height:48px"><svg class="ic " aria-hidden="true"><use href="#i-dog"/></svg></span><div style="flex:1"><b style="color:var(--ink)">Max</b><div class="caption">Perro · Labrador mestizo · 4 años · 24 kg</div></div><button class="icon-btn" aria-label="Editar a Max"><svg class="ic ic-sm" aria-hidden="true"><use href="#i-pencil"/></svg></button></div>
+    <p class="caption" style="margin-top:12px">Los datos de tu mascota se comparten con el proveedor solo cuando haces una reserva.</p>
+  </section>
+</div>
+
+</div></main>
+<nav class="bottom-nav" aria-label="Navegación inferior"><a href="panel.html"><svg class="ic " aria-hidden="true"><use href="#i-house"/></svg>Inicio</a><a href="buscar.html"><svg class="ic " aria-hidden="true"><use href="#i-search"/></svg>Buscar</a><a href="reservas.html"><svg class="ic " aria-hidden="true"><use href="#i-calendar-check"/></svg>Reservas</a><a href="perfil.html" aria-current=page><svg class="ic " aria-hidden="true"><use href="#i-user"/></svg>Perfil</a></nav>
+<script src="app.js"></script>
+</body>
+</html>
